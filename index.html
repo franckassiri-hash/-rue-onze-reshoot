@@ -814,7 +814,7 @@ const DATA = {
   /* ---------- JOURNÉE ---------- */
   timeline:[
     {time:"7h00", end:"8h00", t:"Maquillage, stylisme & préparation caméra", d:"Tout le monde arrive à 7h00, sauf Karine (8h45). Victoria (maquillage) à 7h00, Grace (stylisme) à 7h30. Ordre de passage dans l'ordre de tournage : Corentin, André, Pascal, Hermann, Emma, puis le gang. Ford et Porsche présentes dès 8h00. Café des Liens ouvert à 7h00.", n:"Tous", major:false},
-    {time:"8h00", end:"8h30", t:"PAT · méca", d:"Corentin, André et Pascal prêts. Essais caméra, lumière, cadre. Si la lumière le permet, on prend l'insert 4.3 (immeubles). Lever du soleil 8h08.", n:"Méca", major:true},
+    {time:"8h00", end:"8h30", t:"PAT · méca", d:"Corentin, André, Pascal, Hermann et Emma prêts. Essais caméra, lumière, cadre. Si la lumière le permet, on prend l'insert 4.3 (immeubles). Lever du soleil 8h08.", n:"Méca", major:true},
     {time:"8h30", end:"10h29", t:"B1 · Tous les plans au Steadicam", d:"8h30 : la scène de Corentin (5.4, libéré vers 8h55). 8h55 : André (libéré vers 9h15). 9h15 : Emma et Hermann dans la Ford (Emma libérée vers 9h50). 9h49 : le gang avec Hermann. 10h21 : insert 1.5 avec la Ford.", n:"B1", major:true, block:"B1"},
     {time:"10h29", end:"10h35", t:"Bascule trépied", d:"6 minutes.", n:"Bascule", major:false},
     {time:"10h35", end:"11h55", t:"B2 · Tous les plans au trépied", d:"Hermann et le gang (gang libéré vers 10h50, Hermann vers 11h10). 11h10 : Karine (libérée vers 11h30). 11h30 : inserts voiture 1.3 et 1.4. Dernier plan avec la voiture fini à 11h50, Ford libérée à 12h00. 11h50 : 4.3 s'il n'a pas été pris le matin.", n:"B2", major:true, block:"B2"},
@@ -832,13 +832,13 @@ const DATA = {
     {role:"L'artiste et sa Porsche 911", name:"Corentin Hilaire", seq:"5.4 en premier · départ impératif 10h00", arr:"7h00", hmc:"7h00", pat:"8h00", fin:"9h00", pick:"—"},
     {role:"Le sportif", name:"André Kebe", seq:"5.4, 5.1, 5.2", arr:"7h00", hmc:"7h10", pat:"8h00", fin:"9h15", pick:"—"},
     {role:"Chauffeur du taxi (doublure de Jean)", name:"Pascal Rubin", seq:"Au volant de la Ford, libéré avec elle", arr:"7h00", hmc:"7h20", pat:"8h00", fin:"11h50", pick:"—"},
-    {role:"Personnage principal", name:"Hermann Diagne", seq:"Départ 12h00, peut tourner jusqu'à 11h50", arr:"7h00", hmc:"7h30", pat:"9h00", fin:"11h10", pick:"—"},
-    {role:"La fashionista", name:"Emma Mougin", seq:"3.3, 3.5", arr:"7h00", hmc:"7h40", pat:"9h00", fin:"9h50", pick:"—"},
-    {role:"Groupe d'amis", name:"Béma Sangaré", seq:"B1, B2", arr:"7h00", hmc:"8h00", pat:"9h30", fin:"10h50", pick:"—"},
-    {role:"Groupe d'amis", name:"Aaron Nyarko", seq:"B1, B2", arr:"7h00", hmc:"8h10", pat:"9h30", fin:"10h50", pick:"—"},
-    {role:"Groupe d'amis · short Le romantique", name:"George Nistor", seq:"B1, B2, short à la fin", arr:"7h00", hmc:"8h20", pat:"9h30", fin:"12h15", pick:"—"},
-    {role:"Groupe d'amis", name:"Thierno Bah", seq:"B1, B2", arr:"7h00", hmc:"8h30", pat:"9h30", fin:"10h50", pick:"—"},
-    {role:"La top model", name:"Karine Phong", seq:"Vient de Lille · maquillage 30 à 40 min · plans solos B2", arr:"8h45", hmc:"8h50", pat:"10h30", fin:"11h30", pick:"—"}
+    {role:"Personnage principal", name:"Hermann Diagne", seq:"Départ 12h00, peut tourner jusqu'à 11h50", arr:"7h00", hmc:"7h30", pat:"8h00", fin:"11h10", pick:"—"},
+    {role:"La fashionista", name:"Emma Mougin", seq:"3.3, 3.5", arr:"7h00", hmc:"7h40", pat:"8h00", fin:"9h50", pick:"—"},
+    {role:"Groupe d'amis", name:"Béma Sangaré", seq:"B1, B2", arr:"7h00", hmc:"8h00", pat:"8h30", fin:"10h50", pick:"—"},
+    {role:"Groupe d'amis", name:"Aaron Nyarko", seq:"B1, B2", arr:"7h00", hmc:"8h10", pat:"8h30", fin:"10h50", pick:"—"},
+    {role:"Groupe d'amis · short Le romantique", name:"George Nistor", seq:"B1, B2, short à la fin", arr:"7h00", hmc:"8h20", pat:"8h30", fin:"12h15", pick:"—"},
+    {role:"Groupe d'amis", name:"Thierno Bah", seq:"B1, B2", arr:"7h00", hmc:"8h30", pat:"8h45", fin:"10h50", pick:"—"},
+    {role:"La top model", name:"Karine Phong", seq:"Vient de Lille · maquillage 30 à 40 min · plans solos B2", arr:"8h45", hmc:"8h50", pat:"9h30", fin:"11h30", pick:"—"}
   ],
   crew:[
     {dept:"Production", role:"Assistante de production (référente samedi)", name:"Eva Mbongue", tel:"06 50 05 44 70"},
@@ -850,6 +850,7 @@ const DATA = {
     {dept:"Image", role:"DOP", name:"Mathieu Tepe", tel:"07 68 38 55 17"},
     {dept:"Image", role:"1er assistant caméra", name:"Kevin Kaiser", tel:"07 68 07 28 60"},
     {dept:"Image", role:"Opérateur Steadicam", name:"Axel Petit", tel:"06 10 46 97 04"},
+    {dept:"Image", role:"BTS vidéos", name:"Veve", tel:"07 81 57 83 70"},
     {dept:"Son", role:"Chef opérateur son", name:"Clément Grumberg", tel:"06 47 62 40 10"},
     {dept:"Électro", role:"Chef électricien", name:"Valentin Loustalet", tel:"06 52 04 44 73"},
     {dept:"Électro", role:"Électricien · machino", name:"Adrien Guiot-Valentin", tel:"07 81 83 05 51"},
