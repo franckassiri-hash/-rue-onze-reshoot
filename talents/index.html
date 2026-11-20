@@ -73,13 +73,14 @@ li{margin:4px 0}
   <div class="box">
     <h2>Contacts sur le plateau</h2>
     <div class="contact"><div class="who"><b>Franck Assiri</b><span>1er assistant réalisateur</span></div><a class="call" href="tel:+33758329750">07 58 32 97 50</a></div>
-    <div class="contact"><div class="who"><b>Eva Mbongue</b><span>Production</span></div><a class="call" href="tel:+33650054470">06 50 05 44 70</a></div>
+    <div class="contact"><div class="who"><b>Johanne Lancelot</b><span>Directrice de production</span></div><a class="call" href="tel:+33663286103">06 63 28 61 03</a></div>
+    <div class="contact"><div class="who"><b>Eva Mbongue</b><span>Assistante de production</span></div><a class="call" href="tel:+33650054470">06 50 05 44 70</a></div>
   </div>
 
   <div class="box">
     <h2>À savoir</h2>
     <ul>
-      <li>Un retard, un imprévu ? Préviens Franck ou Eva le plus tôt possible.</li>
+      <li>Un retard, un imprévu ? Préviens Franck, Johanne ou Eva le plus tôt possible.</li>
       <li>Réseaux sociaux : pas de story ni de photo où l'on voit les vêtements, et on ne cite pas la marque.</li>
       <li>Météo : 6° à 11°, nuageux. Prévois de quoi te couvrir entre les prises.</li>
       <li>Les horaires peuvent encore bouger : cette fiche est toujours à jour, garde le lien.</li>
@@ -104,7 +105,7 @@ function render(){
   document.getElementById('list').innerHTML=L.map(t=>`
   <div class="t${q?' hl':''}"><div class="n">${esc(t.n)}</div><div class="r">${esc(t.r)}</div>
    <div class="times"><div><span>Arrivée</span><b>${esc(t.a)||'—'}</b></div><div><span>HMC</span><b>${esc(t.h)}</b></div><div class="pat"><span>PAT</span><b>${esc(t.p)}</b></div><div><span>Fin</span><b>${esc(t.f)||'—'}</b></div></div></div>`).join('')
-   ||(T.length?'<div class="box">Aucun nom trouvé. Contacte Franck ou Eva.</div>':'<div class="box">Chargement des horaires…</div>');
+   ||(T.length?'<div class="box">Aucun nom trouvé. Contacte Franck, Johanne ou Eva.</div>':'<div class="box">Chargement des horaires…</div>');
 }
 let SIG='';
 async function refresh(){
