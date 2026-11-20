@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Cache-Control" content="no-cache">
+<title>RUE ONZE · Reshoot 21/11 · Talents</title>
+<style>
+:root{--bg:#0e0e10;--card:#18181b;--line:#2a2a30;--txt:#f4f4f5;--mut:#a1a1aa;--acc:#ff5a2b;--acc2:#ffb02e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:20px 16px 48px}
+.brand{font-weight:800;letter-spacing:.14em;font-size:13px;color:var(--acc)}
+h1{font-size:26px;line-height:1.15;margin:6px 0 4px}
+.date{color:var(--mut);font-size:15px}
+.hero{border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:16px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:12px 0}
+.box h2{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin:0 0 8px;font-weight:700}
+a{color:var(--acc2)}
+.place b{display:block;font-size:16px}
+.legend{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:14px;color:var(--mut)}
+.legend b{color:var(--txt)}
+.search{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:#111114;color:var(--txt);font-size:16px;margin:4px 0 2px}
+.t{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}
+.t.hl{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc)}
+.t .n{font-size:18px;font-weight:700}
+.t .r{color:var(--mut);font-size:13px;margin-top:1px}
+.times{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:12px}
+.times div{background:#111114;border-radius:10px;padding:8px 6px;text-align:center}
+.times span{display:block;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+.times b{font-size:17px;font-variant-numeric:tabular-nums}
+.times .pat{background:rgba(255,90,43,.14)}
+.times .pat b{color:var(--acc)}
+.contact{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.contact:first-of-type{border-top:0;padding-top:2px}
+.contact .who b{display:block}
+.contact .who span{color:var(--mut);font-size:13px}
+.call{white-space:nowrap;background:var(--acc);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:9px 14px;font-size:14px}
+ul{margin:0;padding-left:18px}
+li{margin:4px 0}
+.foot{color:var(--mut);font-size:12.5px;text-align:center;margin-top:22px}
+@media(max-width:380px){.times b{font-size:15px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="brand">RUE ONZE</div>
+    <h1>Reshoot · Fiche talents</h1>
+    <div class="date">Samedi 21 novembre 2026</div>
+  </div>
+
+  <div class="box place">
+    <h2>Rendez-vous</h2>
+    <b>Café des Liens · base maquillage et costumes</b>
+    Rue Stanislas Meunier, 75020 Paris · <a href="https://maps.apple.com/?q=Rue+Stanislas+Meunier+75020+Paris">Itinéraire</a>
+  </div>
+
+  <div class="box">
+    <h2>Comment lire tes horaires</h2>
+    <div class="legend">
+      <b>Arrivée</b><span>au Café des Liens</span>
+      <b>HMC</b><span>ton passage maquillage / coiffure / costume</span>
+      <b>PAT</b><span>prêt à tourner, sur le plateau (on commence par des essais caméra, premières prises vers 8h30)</span>
+      <b>Fin</b><span>heure de fin prévue (indicative)</span>
+    </div>
+  </div>
+
+  <input class="search" id="q" type="search" placeholder="Trouve ton nom…" autocomplete="off">
+  <div id="list"></div>
+
+  <div class="box">
+    <h2>Contacts sur le plateau</h2>
+    <div class="contact"><div class="who"><b>Franck Assiri</b><span>1er assistant réalisateur</span></div><a class="call" href="tel:+33758329750">07 58 32 97 50</a></div>
+    <div class="contact"><div class="who"><b>Eva Mbongue</b><span>Production</span></div><a class="call" href="tel:+33650054470">06 50 05 44 70</a></div>
+  </div>
+
+  <div class="box">
+    <h2>À savoir</h2>
+    <ul>
+      <li>Un retard, un imprévu ? Préviens Franck ou Eva le plus tôt possible.</li>
+      <li>Réseaux sociaux : pas de story ni de photo où l'on voit les vêtements, et on ne cite pas la marque.</li>
+      <li>Météo : 6° à 11°, nuageux. Prévois de quoi te couvrir entre les prises.</li>
+      <li>Les horaires peuvent encore bouger : cette fiche est toujours à jour, garde le lien.</li>
+    </ul>
+  </div>
+
+  <div class="foot">Merci à toutes et à tous, on finit en beauté 🎬</div>
+</div>
+<script>
+let T=[];
+const norm=s=>String(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+const tm=t=>{const m=String(t||'').match(/(\d{1,2})\s*h\s*(\d{0,2})/);return m?(+m[1])*60+(+(m[2]||0)):9999;};
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function fromCast(cast){
+  return (cast||[]).filter(c=>c&&c.name&&c.fiche!==false&&c.hmc&&c.hmc!=='—')
+    .map(c=>({n:c.name,r:c.role,a:c.arr||'',h:c.hmc||'',p:c.pat||'',f:c.fin||''}))
+    .sort((x,y)=>tm(x.h)-tm(y.h)||tm(x.a)-tm(y.a));
+}
+function render(){
+  const q=norm(document.getElementById('q').value.trim());
+  const L=T.filter(t=>!q||norm(t.n).includes(q));
+  document.getElementById('list').innerHTML=L.map(t=>`
+  <div class="t${q?' hl':''}"><div class="n">${esc(t.n)}</div><div class="r">${esc(t.r)}</div>
+   <div class="times"><div><span>Arrivée</span><b>${esc(t.a)||'—'}</b></div><div><span>HMC</span><b>${esc(t.h)}</b></div><div class="pat"><span>PAT</span><b>${esc(t.p)}</b></div><div><span>Fin</span><b>${esc(t.f)||'—'}</b></div></div></div>`).join('')
+   ||(T.length?'<div class="box">Aucun nom trouvé. Contacte Franck ou Eva.</div>':'<div class="box">Chargement des horaires…</div>');
+}
+let SIG='';
+async function refresh(){
+  let cast=null;
+  try{ const r=await fetch('/.netlify/functions/state?t='+Date.now(),{cache:'no-store'}); if(r.ok){const d=await r.json(); if(d&&d.data&&Array.isArray(d.data.cast)) cast=d.data.cast;} }catch(e){}
+  if(!cast){ try{ const r=await fetch('cast.json?t='+Date.now(),{cache:'no-store'}); if(r.ok) cast=(await r.json()).cast; }catch(e){} }
+  if(!cast) return;
+  const nt=fromCast(cast), sig=JSON.stringify(nt);
+  if(sig!==SIG){ SIG=sig; T=nt; render(); }
+}
+document.getElementById('q').addEventListener('input',render);
+render(); refresh();
+setInterval(refresh,30000);
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden) refresh(); });
+</script>
+</body>
+</html>
